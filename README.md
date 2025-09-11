@@ -3,6 +3,13 @@ Dockerized version of Curecoind (linux, ubuntu 22) (https://github.com/cygnusxi/
 
 default: (uses standard file locations etc)
 
+usage:
+git clone https://github.com/TriiiTechnologiesLLC/curecoind-dockerized.git
+
+cd curecoind-dockerized
+
+docker build . --tag local:curecoind
+
 docker run --restart always --name curecoind -d -p 9911:9911 -v /root/.curecoin/:/root/.curecoin/ local:curecoind
 
 NOTE: it is possible to set the curecoin dir locally other than if it was ran previously eg:
