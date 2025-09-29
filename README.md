@@ -6,6 +6,8 @@ default: (uses standard file locations etc)
 usage:
 git clone https://github.com/TriiiTechnologiesLLC/curecoind-dockerized.git
 
+substitute {arch}=amd64 or arm64 currently
+
 cd curecoind-dockerized/{arch}
 
 docker build . --tag local:curecoind
