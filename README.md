@@ -6,7 +6,7 @@ default: (uses standard file locations etc)
 usage:
 git clone https://github.com/TriiiTechnologiesLLC/curecoind-dockerized.git
 
-cd curecoind-dockerized
+cd curecoind-dockerized/{arch}
 
 docker build . --tag local:curecoind
 
